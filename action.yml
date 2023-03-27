@@ -34,7 +34,7 @@ runs:
           npm install -g 'sfdx-cli@${{ steps.versions.outputs.sfdx-version }}'
         shell: bash
       - name: Set Up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4.5.0
         with:
           python-version: "3.10"
           cache: pip
